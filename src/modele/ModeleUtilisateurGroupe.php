@@ -25,7 +25,7 @@ class ModeleUtilisateurGroupe{
 		 return $this->idGroupe;
 	}	
 
- 	
+ 	// test ally
 }
 
 ?>
