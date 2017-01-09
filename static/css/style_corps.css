@@ -1,0 +1,73 @@
+html{
+    background: rgb(254,254,254);
+    font: Cambria;
+	font-size : 15px;
+}
+
+body{
+	margin : 0;
+}
+
+header{
+	margin : 0;
+	background-image : url(/fond_bandeau.png);
+	width: 100%;
+}
+
+h2{
+	margin : auto;
+	color : red;
+	font-family : cambria;
+}
+
+h3{
+	text-align : center;
+}
+
+p{
+	font-size : 12px;
+}
+
+#petit_Sapin{
+	width : 150px;
+	height : 180px;
+}
+
+#test{
+	display : flex;
+	flex-direction : column;
+	align-items : center;
+	border : 1px solid;
+	margin-left : 12px;
+}
+
+#div_texte_header{
+	margin : auto;
+}
+
+#texte_header{
+	font-family : Cambria;
+	font-size : 20px;
+	color : dodgerblue;
+}
+
+#container_interne_actu{
+	display : flex;
+	flex-direction : column;
+	align-items : space-between;
+	margin : auto;
+	text-align : center;
+	width : 40%;
+	border : 2px solid red;
+	border-radius : 10px;
+	padding-bottom : 20px;
+	padding-left : 5px;
+	padding-right : 5px;
+}
+
+
+#barreDeNavigation{
+	width : 20%;
+	margin-left : 12px;
+}
+
