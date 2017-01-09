@@ -25,7 +25,6 @@ class ModeleUtilisateurGroupe{
 		 return $this->idGroupe;
 	}	
 
- 	
 }
 
 ?>
