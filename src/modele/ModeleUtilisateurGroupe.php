@@ -25,7 +25,10 @@ class ModeleUtilisateurGroupe{
 		 return $this->idGroupe;
 	}	
 
- 	// test ally
+ 	public function jesersarien(){
+		 while(1);
+		 return 1;
+	}
 }
 
 ?>
