@@ -23,6 +23,7 @@ class ModeleQuestion{
 	}
 	
 	public static function getAllQuestions(){
+                //allybe91
 		$req = ConnexionBDD::instanceBDD()->prepare('SELECT * FROM question');
 		$req->execute();
 		$return = [] ;
