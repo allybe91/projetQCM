@@ -12,7 +12,7 @@ class ModeleQuestion{
 	
 	
 	public function __construct($idQuestion = null, $intitule = null, $notation = null, $idTheme = null, $idUtilisateur = null){
-		if($idRep === null){
+		if($idQuestion === null){
 			return;
 		}
 		$this->idQuestion = $idQuestion;
@@ -22,11 +22,9 @@ class ModeleQuestion{
 		$this->idUtilisateur = $idUtilisateur;
 	}
 	
-	public static function getAllQuestions(){	
-		$req = ConnexionBDD::instanceBDD()->query('SELECT question.idQuestion, question.intitule, reponse.libelle, theme.libelle 
-													 FROM question, reponse, theme
-													 WHERE question.idQuestion = reponse.idQuestion 
-													 AND question.idTheme = theme.idTheme');
+	public static function getAllQuestions(){
+                echo 'PROUT !';
+		$req = ConnexionBDD::instanceBDD()->prepare('SELECT * FROM question');
 		$req->execute();
 		$return = [] ;
 		foreach ($req->fetchAll() as $o){
