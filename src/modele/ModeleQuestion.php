@@ -23,7 +23,6 @@ class ModeleQuestion{
 	}
 	
 	public static function getAllQuestions(){
-                echo 'PROUT !';
 		$req = ConnexionBDD::instanceBDD()->prepare('SELECT * FROM question');
 		$req->execute();
 		$return = [] ;
